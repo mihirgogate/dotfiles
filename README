@@ -1,0 +1,6 @@
+Run the following commands on the command line in order.
+
+1. cd ~
+2. git clone --recursive https://github.com/mihirgogate/dotfiles.git dotfiles
+3. chmod +x dotfiles/setup.sh
+4. ./dotfiles/setup.sh

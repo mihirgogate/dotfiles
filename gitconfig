@@ -1,0 +1,16 @@
+[color]
+    diff = true
+    ui = auto
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red
+    new = green
+[alias]
+  co = checkout
+  di = diff
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[user]
+	name = Mihir Gogate
+	email = mihir.gogate@gmail.com
