@@ -119,3 +119,6 @@ let g:molokai_original = 1
 let g:syntastic_python_checkers = ['pep8', 'pyflakes']
 let g:syntastic_python_pep8_args = '--ignore=E501'
 let g:syntastic_auto_loc_list = 1
+
+" Recognize jinja files
+au BufRead,BufNewFile *.jinja set filetype=jinja
