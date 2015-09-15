@@ -122,3 +122,5 @@ let g:syntastic_auto_loc_list = 1
 
 " Recognize jinja files
 au BufRead,BufNewFile *.jinja set filetype=jinja
+
+nnoremap <Leader>r :!clear && cat % \| pbcopy && python %<CR>
