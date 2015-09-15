@@ -42,7 +42,7 @@ set cursorline
 
 " wildmenu for command line completion
 set wildmenu
-set wildmode=list:longest
+set wildmode=list,full
 
 " make tabs visible
 set listchars=tab:>-,trail:-
