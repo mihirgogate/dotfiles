@@ -1,7 +1,7 @@
 #! /bin/bash
 BACKUP_OLD_DOT_FILES_FOLDER=~/olddotfiles
 DOT_FILES_FOLDER="~/dotfiles"
-DOT_FILES_AND_FOLDERS="gitconfig vimrc tmux.conf bash_profile vim"
+DOT_FILES_AND_FOLDERS="gitconfig vimrc tmux.conf bash_profile vim zprofile"
 
 echo "Backing up old dot files in $BACKUP_OLD_DOT_FILES_FOLDER"
 mkdir "$BACKUP_OLD_DOT_FILES_FOLDER"
