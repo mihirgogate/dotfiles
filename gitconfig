@@ -12,6 +12,7 @@
   br = branch
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [user]
-    name = Mihir Gogate
+	name = Mihir Gogate
+	email = mihir@uber.com
 [merge]
     conflictstyle = diff3

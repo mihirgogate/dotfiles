@@ -124,3 +124,9 @@ let g:syntastic_auto_loc_list = 1
 au BufRead,BufNewFile *.jinja set filetype=jinja
 
 nnoremap <Leader>r :!clear && cat % \| pbcopy && python %<CR>
+
+" Make easy motion work like vimium(somewhat :( )
+nnoremap F H:call EasyMotion#WB(0, 0)<CR>
+
+" Ctrl P shortcut (More here http://kien.github.io/ctrlp.vim/)
+let g:ctrlp_map = '<Leader>f'
