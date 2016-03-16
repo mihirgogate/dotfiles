@@ -29,3 +29,5 @@ fi
 # Pressing Ctrl-S causes my keystrokes to stop being processed. This prevents that.
 stty ixany
 stty ixoff -ixon
+alias act='source env/bin/activate'
+alias new-branch='git fetch origin && git checkout origin/master -b '
