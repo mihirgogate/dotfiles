@@ -1,5 +1,4 @@
 # Git aliases
-alias gc='git checkout'
 alias gd='git diff'
 alias gl='git log --graph'
 alias glm='git log --author=mihir'
@@ -8,7 +7,6 @@ alias ga='git add -u .'
 alias modified=$'git status | grep modified | awk \'{print $3}\''
 
 # General shortcuts
-alias gr='grep'
 alias ta='tmux attach'
 alias cgb="git branch | grep -E '^\*' | awk '{print $2}'"
 

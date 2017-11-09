@@ -15,13 +15,11 @@ set ruler
 set title
 
 " Indentation
+filetype plugin indent on
 set tabstop=4
 set softtabstop=0
 set shiftwidth=4
 set expandtab
-set autoindent
-set copyindent
-set smartindent
 
 " remap search result skipping to be sane
 map n /<CR>
@@ -130,3 +128,9 @@ nnoremap F H:call EasyMotion#WB(0, 0)<CR>
 
 " Ctrl P shortcut (More here http://kien.github.io/ctrlp.vim/)
 let g:ctrlp_map = '<Leader>f'
+
+" Prevent creation of swap files
+set noswapfile
+
+" Set visual bell
+set visualbell

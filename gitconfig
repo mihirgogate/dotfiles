@@ -13,6 +13,6 @@
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [user]
 	name = Mihir Gogate
-	email = mihir@uber.com
+	email = mihir.gogate@gmail.com
 [merge]
     conflictstyle = diff3
