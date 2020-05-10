@@ -123,14 +123,33 @@ au BufRead,BufNewFile *.jinja set filetype=jinja
 
 nnoremap <Leader>r :!clear && cat % \| pbcopy && python %<CR>
 
-" Make easy motion work like vimium(somewhat :( )
-nnoremap F H:call EasyMotion#WB(0, 0)<CR>
-
-" Ctrl P shortcut (More here http://kien.github.io/ctrlp.vim/)
-let g:ctrlp_map = '<Leader>f'
-
 " Prevent creation of swap files
 set noswapfile
 
 " Set visual bell
 set visualbell
+
+nnoremap <Leader>g :GrepperGrep 
+
+" jump to tag under keyword using g]
+nnoremap g] :execute "tag ".expand("<cword>")<CR>
+
+" ----- EASY-MOTION CONFIGURATION -------
+nmap F <Plug>(easymotion-bd-w)
+hi link EasyMotionTarget ErrorMsg
+hi link EasyMotionShade  Comment
+
+hi link EasyMotionTarget2First ErrorMsg
+hi link EasyMotionTarget2Second ErrorMsg
+
+hi link EasyMotionMoveHL Search
+hi link EasyMotionIncSearch Search
+" ------ END OF EASY-MOTION CONFIGURATION ----
+
+
+" ---------SNIPPET CONFIGURATION ----
+" set directory where all snippets will live
+let g:UltiSnipsSnippetDirectories=["~/.vim/snippets"]
+
+" -------- END OF SNIPPET CONFIGURATION ----
+

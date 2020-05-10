@@ -8,7 +8,7 @@ alias szp='source ~/.zprofile'
 
 # Git aliases
 alias gfo='git fetch origin'
-alias newb='git fetch origin && git checkout origin/master -b '
+alias newb='hg checkout master && arc pull && hg bookmark'
 alias gl='git log --graph'
 alias glm='git log --author=mihir'
 alias gb='git branch --sort=-committerdate'
@@ -25,4 +25,4 @@ alias act='source env/bin/activate'
 alias cf='cd ~/Dropbox/ProgrammingContest/codeforces'
 alias topc='cd ~/Dropbox/ProgrammingContest/TopCoder'
 
-DISABLE_AUTO_TITLE="true"
+source ~/.work_zprofile
